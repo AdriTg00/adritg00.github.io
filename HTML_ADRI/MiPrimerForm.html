@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+	<form action="https://formtester.goodbytes.be/post.php" method="post">
+
+		<h1>FORMULARIO DE CONTACTO</h1>
+
+		<p class="nombre">Tu nombre: <input type="text" name="Nombre"></p>
+
+		<p class="correo">Tu dirección de correo: <input type="text" name="Correo"></p>
+
+		<p class="mensaje">Tu mensaje:<br>
+			<textarea name="Mensaje"></textarea>
+		</p>
+
+		<p class="email">Quieres que te contestemos por email?</p>
+			<select name="envioEmail">
+				
+				<option value="si">Si
+				<option value="no">No
+			</select>
+		</p>
+
+		<fieldset>
+			<select name="opcionSeleccionada"></select>
+			<legend>Selecciona una opcion:</legend>
+
+			<div>
+				<input type="radio" id="Alumno" name="opcionSeleccionada" value="Alumno" checked />
+				<label for="huey">Alumno</label>
+			</div>
+
+			<div>
+				<input type="radio" id="Profesor" name="opcionSeleccionada" value="Profesor" />
+				<label for="dewey">Profesor</label>
+			</div>
+
+			<div>
+				<input type="radio" id="Usuario externo" name="opcionSeleccionada" value="Opcion" />
+				<label for="louie">Usuario externo</label>
+			</div>
+		</fieldset>
+
+
+
+		<input type="submit" value="Enviar mensaje">
+	</form>
+
+
+
+	<a href="mailto:adriantg@iesiniesta.es?Subject=Aquí%20el%20asunto%20del%20mail">Contactar por correo electronico</a>
+
+
+</body>
+
+</html>
